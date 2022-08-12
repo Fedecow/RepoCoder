@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/*GRID*/
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    
+}
+
+footer {
+    grid-area: footer;
+}
+
+.gridPadre {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+@media (max-width:1024px) {
+    .gridPadre {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+    }
+ 
+    
+}
+
+@media (max-width:768px) {
+    .gridPadre {
+     display: grid;
+     grid-template-areas: 
+     "header"
+     "main"
+     "footer";
+    
+    } 
+ }
+
+
+/************Comienzo del HEADER************/
+.header {
+    background-color: #fde2d4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 85px;
+    
+    
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+    padding: 5px 10%;
+}
+
+.header .logo img {
+    height: 80px;
+    width: auto;
+   
+}
+
+.header .nav-links {
+    list-style: none;
+    margin-right: 50px;
+    
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+
+}
+.header .nav-links li a {
+    font-size: 700;
+    color: #4c453b;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: #f17131;
+}
+.hamburguesa {
+    display: none;
+}
+/************Fin de HEADER*********/
+
+
+
+/***********Comienzo de HERO Inicio*********/
+.hero {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/fondo-modelado.png);
+    background-size: cover;
+    
+}
+.hero .contenedorTexto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+ 
+    
+}
+.heroText {
+    width: 50%;
+    color: #FFFFFF;
+    font-size: x-large;
+
+}
+
+.heroText h1 {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   /* text-align: center;*/
+    
+}
+
+.heroText p {
+    font-weight: 100;
+    line-height: 27px;
+    margin: 0;
+   /* text-align: center;*/
+}
+/*******Fin de HERO Inicio*********/
+
+
+/***********Comienzo de HERO Nosotros*********/
+.heroDos {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/hero.png);
+    background-size: cover;
+    
+}
+.heroDos .contenedorTextoDos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.heroTextDos {
+    width: 50%;
+    color: #FFFFFF;
+    font-size: 21px;
+    position: relative;
+    top: 10px;
+    padding: 10px 0;
+    
+
+
+}
+
+.heroTextDos h1 {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   /* text-align: center;*/
+    
+}
+
+.heroTextDos p {
+    font-weight: 100;
+    line-height: 27px;
+    margin: 0;
+   /* text-align: center;*/
+}
+/*******Fin de HERO Nosotros*********/
+
+
+/**********Comienzo de FOOTER************/
+ .footer {
+    width: 100vw;
+    /*padding: 45px 0;*/
+    background-color: #fde2d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 150px;
+    
+    font-size: large;
+    
+}
+
+.footer ul { 
+    list-style-type: none;
+    display: flex;
+    margin: 0 15px;
+
+}
+
+.footer ul li a {
+    color: #4c453b;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.whatsFoot {
+    display: none;
+}
+
+/************************Fin de Footer********************/
+
+
+/********************Comienzo de Preguntas****************/
+
+.preguntas {
+    margin: 15px;
+    padding: 25px;
+    font-size: large;
+    height: 100vh;
+    
+}
+
+.preguntas h2 {
+    text-align: center;
+}
+
+
+
+
+/*****************Comienzo Contactanos*********************/
+
+.contenedorMain {
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    position: relative;
+  
+   
+    
+    
+    
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.controls {
+    width: 95%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+
+}
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (max-width:580px) {
+    .form-register {
+        width: 50%;
+        padding: 0 50px;
+    }
+    .form-register h4 {
+        text-align: center;
+    }
+
+    .preguntas {
+        
+        height: 50%;
+    }
+}
+
+/*****************Fin de Contactanos*********************/
+
+
+/*************Comienzo de Productos**************/
+
+.padre {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hijo {
+    background-color: #0c1b3b;
+    height: 300px;
+    width: 300px;
+    border: 1px black dotted;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 5px;
+    padding-bottom: 100px;
+    
+}
+
+.hijo p {
+    display: inline-block;
+    position: relative;
+    bottom: -200px;
+    right: 100px;
+    color: #FFFFFF;
+}
+img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+/************Fin de Producto*************/
+
+/********Comienzo de IconoWhatsapp********/
+ 
+
+.whatsapp img {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/********Fin de IconoWhatsapp********/
+
+
+/*******@Medias Querie*******/
+
+@media (max-width:854px) {
+
+
+.heroText {
+    width: calc(100vw - 100px);
+    text-align: center;
+    
+}
+
+
+
+}
+
+@media (max-width:335px) {
+    .heroText p {
+      display: none;
+    }
+    .heroText h1 {
+      
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+@media (max-width:1013px) {
+    .footer {
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100vw;
+        
+    }
+    .footer p {
+        width: 80%;
+    }
+    .footer ul li  {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .footer ul li a:hover {
+        color: rgb(0, 0, 0);
+    }
+    
+    
+
+
+    .header .nav-links {
+        display: none;
+    }
+
+    .whatsapp {
+        display: none;
+    }
+    .hamburguesa {
+        display: flex;
+        height: 78px;
+        justify-content: flex-end;
+        cursor: pointer;
+       
+        
+     }
+     .whatsFoot {
+        display: flex;
+        cursor: pointer;
+        
+     }
+}
