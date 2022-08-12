@@ -98,9 +98,76 @@ footer {
 .header .nav-links li a:hover {
     color: #f17131;
 }
-.hamburguesa {
-    display: none;
+
+.navBoton {
+    color: #2c3e50;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding:  0 20px;
+    line-height: 60px;
+   display: none;
 }
+
+@media (max-width:850px) {
+    .header {
+        height: 60px;
+        display: flex;
+        z-index: 1000;
+        
+        
+    }
+    
+    .header .logo {
+        cursor: pointer;
+        margin-right: auto;
+        padding: 5px 10%;
+    }
+    
+    .header .logo img {
+        height: 70px;
+        width: auto;
+       
+    }
+
+    .header .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #2c3e50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 22px;
+        
+    }
+
+    .header .nav-links li {
+        padding: 10px 0;
+    }
+
+    .header .nav-links li a {
+        color: #fde2d4;
+    }
+
+    .navBoton {
+        display: block;
+        position: relative;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    
+   
+   
+}
+
+
+
+
 /************Fin de HEADER*********/
 
 
@@ -236,6 +303,8 @@ footer {
     padding: 25px;
     font-size: large;
     height: 100vh;
+
+    
     
 }
 
@@ -390,6 +459,9 @@ img {
 .heroText {
     width: calc(100vw - 100px);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     
 }
 
@@ -397,9 +469,10 @@ img {
 
 }
 
-@media (max-width:335px) {
+@media (max-width:600px) {
     .heroText p {
       display: none;
+    
     }
     .heroText h1 {
       
@@ -433,21 +506,12 @@ img {
     
 
 
-    .header .nav-links {
-        display: none;
-    }
+    
 
     .whatsapp {
         display: none;
     }
-    .hamburguesa {
-        display: flex;
-        height: 78px;
-        justify-content: flex-end;
-        cursor: pointer;
-       
-        
-     }
+    
      .whatsFoot {
         display: flex;
         cursor: pointer;

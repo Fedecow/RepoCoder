@@ -8,6 +8,8 @@
     <title>La Barbotina</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/labarbotina-logo.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd44b09a96.js" crossorigin="anonymous"></script>
 </head>
     <!--------------Fin de Links-------------->
     
@@ -18,10 +20,11 @@
             <img src="./img/labarbotina-logo.jpg" alt="imgLogo">
             
         </div>
-        <div class="hamburguesa">
-            <img src="./img/menu-hamburguesa.png" alt="burger">
-        </div>
+        
         <nav>
+            <button class="navBoton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="html/contactanos.html">Contactanos</a></li>
@@ -39,8 +42,8 @@
     <div class="hero">
         <div class="contenedorTexto">
             <div class="heroText">
-                <h1>La Barbotina</h1>
-                <p>La barbotina es un emprendimiento creado con el fin de mostrar los productos de arte que junto a mi compañera fuimos creando a lo largo de los años de cursado, buscamos que las personas se adentren al mundo del arte como nosotras lo hicimos y que a la vez puedan adquirir los diferentes productos que ofrecemos</p>
+                <h1 data-aos="fade-right" data-aos-duration="1500">La Barbotina</h1>
+                <p data-aos="fade-left" data-aos-duration="1500">La barbotina es un emprendimiento creado con el fin de mostrar los productos de arte que junto a mi compañera fuimos creando a lo largo de los años de cursado, buscamos que las personas se adentren al mundo del arte como nosotras lo hicimos y que a la vez puedan adquirir los diferentes productos que ofrecemos</p>
             </div>
         </div>
     </div>
@@ -70,5 +73,10 @@
     <a href="#"><img src="img/logo-whatsapp.png" alt="iconoDeWhatsapp"></a>
 </div>
 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
