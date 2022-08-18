@@ -175,6 +175,18 @@ footer {
 }
 
 
+.navbar-toggler {
+    border: none;
+
+}
+
+@media (max-width:350px) {
+    .navegacion {
+        height: 15vh;
+    }
+}
+
+
 
 
 /************Fin de HEADER*********/
@@ -270,7 +282,7 @@ footer {
 
 
 .imagenNosotros {
-    width: 50%;
+    width: 50vw;
     max-height: 50vh;
     margin: 200px;
     
@@ -279,6 +291,12 @@ footer {
 
 #carouselExampleCaptions {
     background-color: #000000;
+}
+
+.contenedorMain {
+    height: 100vh;
+    overflow: hidden;
+    
 }
 /*******Fin de HERO Nosotros*********/
 
@@ -339,9 +357,10 @@ footer {
 
 /*****************Comienzo Contactanos*********************/
 
-.contenedorMain {
-    height: 100vh;
+.contenedorMainDos {
+    max-height: 100%;
     overflow: hidden;
+    
     
 }
 
@@ -349,11 +368,17 @@ footer {
     width: 700px;
     background: #24303c;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
     margin-top: 100px;
     border-radius: 4px;
     color: #FFFFFF;
-    position: relative;
+    margin-bottom: 50px;
+    
+    
+   
   
    
     
@@ -399,10 +424,7 @@ footer {
     cursor: pointer;
 }
 @media (max-width:990px) {
-    .form-register {
-        width: 50%;
-        padding: 0 50px;
-    }
+    
     .form-register h4 {
         text-align: center;
     }
@@ -410,6 +432,13 @@ footer {
     .preguntas {
         
         height: 50%;
+    }
+}
+
+@media (max-width:700px) {
+    .form-register {
+        width: auto;
+        height: auto;
     }
 }
 
@@ -455,6 +484,7 @@ img {
 }
 .colorMain {
     background-color: #000000;
+    bottom: 5px;
 }
 
 
