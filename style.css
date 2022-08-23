@@ -282,8 +282,10 @@ footer {
 
 
 .imagenNosotros {
-    width: 50vw;
-    max-height: 50vh;
+   
+    object-fit: cover;
+ 
+    max-height: 350px;
     margin: 200px;
     
     
@@ -356,6 +358,10 @@ footer {
 
 
 /*****************Comienzo Contactanos*********************/
+
+.logoBarb {
+    padding: 0 50px;
+}
 
 .contenedorMainDos {
     max-height: 100%;
