@@ -280,18 +280,24 @@ footer {
    /* text-align: center;*/
 }
 
-
+.colorFondo {
+    background-color: #FFFFFF;
+}
 .imagenNosotros {
    
     object-fit: cover;
  
     max-height: 350px;
     margin: 200px;
+    width: 100vh;
     
     
 }
 
-#carouselExampleCaptions {
+.colorBoton {
+    filter: invert(1);
+}
+.colorMainNos {
     background-color: #000000;
 }
 
@@ -300,8 +306,16 @@ footer {
     overflow: hidden;
     
 }
-/*******Fin de HERO Nosotros*********/
 
+.colorLetra {
+    color: #000000;
+}
+
+@media (max-width:407px) {
+    .colorBoton {
+        filter: invert(0);
+    }
+}
 
 /**********Comienzo de FOOTER************/
  .footer {
@@ -372,7 +386,7 @@ footer {
 
 .form-register {
     width: 700px;
-    background: #24303c;
+    background: #fde2d4;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -380,7 +394,7 @@ footer {
     margin: auto;
     margin-top: 100px;
     border-radius: 4px;
-    color: #FFFFFF;
+    color: #000000;
     margin-bottom: 50px;
     
     
@@ -400,11 +414,11 @@ footer {
 
 .controls {
     width: 95%;
-    background: #24303c;
+    background: #fde2d4;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #1f53c5;
+    border: 1px solid #000000;
     
 }
 
@@ -421,7 +435,7 @@ footer {
 }
 .form-register .botons {
     width: 100%;
-    background: #1f53c5;
+    background: #000000;
     border: none;
     padding: 12px;
     color: white;
@@ -489,7 +503,7 @@ img {
     max-height: 250px;
 }
 .colorMain {
-    background-color: #000000;
+    background-color: #FFFFFF;
     bottom: 5px;
 }
 
