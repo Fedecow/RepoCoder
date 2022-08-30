@@ -1,0 +1,27 @@
+.footer {
+    width: 100vw;
+  
+    /*padding: 45px 0;*/
+    background-color: #fde2d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: large;
+  
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0 15px;
+  
+      li a {
+        color: #4c453b;
+        text-decoration: none;
+        margin: 0 15px;
+      }
+    }
+  }
+  
+  .whatsFoot {
+    display: none;
+  }
