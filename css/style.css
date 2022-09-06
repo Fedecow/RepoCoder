@@ -100,3 +100,24 @@
 
 .whatsFoot {
   display: none; }
+
+.form-register {
+  background-color: #fde2d4;
+  font-size: 30px; }
+
+.primerEstilo, .segundoEstilo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: right; }
+
+.segundoEstilo {
+  font-size: 35px; }
+
+.heroText p {
+  font-weight: 100;
+  line-height: 27px;
+  margin: 0; }
+
+.heroText h1 {
+  margin: 0;
+  font-family: Cambria; }

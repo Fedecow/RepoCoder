@@ -1,0 +1,18 @@
+@mixin parrafos {
+    font-weight: 100;
+    line-height: 27px;
+    margin: 0;
+}
+
+.heroText p {
+    @include parrafos;
+}
+
+@mixin parrafoConParametros($margin, $family) {
+    margin: $margin;
+    font-family: $family;
+}
+
+.heroText h1 {
+    @include parrafoConParametros(0,Cambria)
+}
