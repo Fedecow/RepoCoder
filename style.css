@@ -282,6 +282,7 @@ footer {
 
 .colorFondo {
     background-color: #FFFFFF;
+ 
 }
 .imagenNosotros {
    
@@ -380,6 +381,8 @@ footer {
 .contenedorMainDos {
     max-height: 100%;
     overflow: hidden;
+    min-height: 100vh;
+   
     
     
 }
@@ -396,6 +399,7 @@ footer {
     border-radius: 4px;
     color: #000000;
     margin-bottom: 50px;
+    position: relative;
     
     
    
@@ -505,6 +509,7 @@ img {
 .colorMain {
     background-color: #FFFFFF;
     bottom: 5px;
+    min-height: 100vh;
 }
 
 
@@ -593,4 +598,8 @@ img {
         cursor: pointer;
         
      }
+}
+
+.heightMain {
+    min-height: 100vh;
 }
