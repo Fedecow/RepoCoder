@@ -1,0 +1,62 @@
+@media (max-width: 854px) {
+    .heroText {
+      width: calc(100vw - 100px);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .heroText {
+      p {
+        display: none;
+      }
+  
+      h1 {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+  
+  @media (max-width: 1013px) {
+    .footer {
+      flex-wrap: wrap;
+      text-align: center;
+      width: 100vw;
+  
+      p {
+        width: 80%;
+      }
+  
+      ul li {
+        text-align: center;
+        padding-top: 15px;
+  
+        a:hover {
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+  
+    .whatsapp {
+      display: none;
+    }
+  
+    .whatsFoot {
+      display: flex;
+      cursor: pointer;
+    }
+  }
+  
+  .heightMain {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

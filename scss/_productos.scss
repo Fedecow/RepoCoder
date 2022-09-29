@@ -1,0 +1,41 @@
+.padre {
+    background-color: #ff0000;
+    width: 100vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .hijo {
+    background-color: #0c1b3b;
+    height: 300px;
+    width: 300px;
+    border: 1px black dotted;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 5px;
+    padding-bottom: 100px;
+  
+    p {
+      display: inline-block;
+      position: relative;
+      bottom: -200px;
+      right: 100px;
+      color: #FFFFFF;
+    }
+  }
+  
+  img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  
+  .colorMain {
+    background-color: #FFFFFF;
+    bottom: 5px;
+    min-height: 100vh;
+  }

@@ -6,52 +6,6 @@
 
 
 
-/*GRID*/
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-    
-}
-
-footer {
-    grid-area: footer;
-}
-
-.gridPadre {
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
-}
-
-@media (max-width:1024px) {
-    .gridPadre {
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer";
-    }
- 
-    
-}
-
-@media (max-width:768px) {
-    .gridPadre {
-     display: grid;
-     grid-template-areas: 
-     "header"
-     "main"
-     "footer";
-    
-    } 
- }
-
 
 /************Comienzo del HEADER************/
 .header {
@@ -450,6 +404,8 @@ footer {
     cursor: pointer;
 }
 @media (max-width:990px) {
+
+   
     
     .form-register h4 {
         text-align: center;
@@ -466,6 +422,8 @@ footer {
         width: auto;
         height: auto;
     }
+
+   
 }
 
 /*****************Fin de Contactanos*********************/
@@ -516,6 +474,7 @@ img {
 
 
 /************Fin de Producto*************/
+
 
 /********Comienzo de IconoWhatsapp********/
  
@@ -604,4 +563,7 @@ img {
 
 .heightMain {
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
