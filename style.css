@@ -1,57 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+/************Comienzo del HEADER************/
 .header {
     background-color: #fde2d4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100vw;
-    height: 85px; }
-    .header .logo {
-      cursor: pointer;
-      margin-right: auto;
-      padding: 5px 10%; }
-      .header .logo img {
-        height: 80px;
-        width: auto; }
-    .header .nav-links {
-      list-style: none;
-      margin-right: 50px; }
-      .header .nav-links li {
-        display: inline-block;
-        padding: 0 20px;
-        cursor: pointer; }
-        .header .nav-links li a {
-          font-size: 700;
-          color: #4c453b;
-          text-decoration: none; }
-          .header .nav-links li a:hover {
-            color: #f17131; }
-  
-  .navBoton {
+    height: 85px;
+    
+    
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+    padding: 5px 10%;
+}
+
+.header .logo img {
+    height: 80px;
+    width: auto;
+   
+}
+
+.header .nav-links {
+    list-style: none;
+    margin-right: 50px;
+    
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+
+}
+.header .nav-links li a {
+    font-size: 700;
+    color: #4c453b;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: #f17131;
+}
+
+.navBoton {
     color: #2c3e50;
     background: none;
     border: none;
     font-size: 30px;
-    padding: 0 20px;
+    padding:  0 20px;
     line-height: 60px;
-    display: none; }
-  
-  .navegacion {
-    height: 10vh;
-    background-color: #fde2d4; }
-  
-  @media (max-width: 850px) {
+   display: none;
+}
+
+.navegacion {
+   height: 10vh;
+    background-color: #fde2d4;
+   
+}
+
+
+
+
+@media (max-width:850px) {
     .header {
-      height: 60px;
-      display: flex;
-      z-index: 1000; }
-      .header .logo {
+        height: 60px;
+        display: flex;
+        z-index: 1000;
+        
+        
+    }
+    
+    .header .logo {
         cursor: pointer;
         margin-right: auto;
-        padding: 5px 10%; }
-        .header .logo img {
-          height: 70px;
-          width: auto; }
-      .header .nav-links {
+        padding: 5px 10%;
+    }
+    
+    .header .logo img {
+        height: 70px;
+        width: auto;
+       
+    }
+
+    .header .nav-links {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -62,173 +104,244 @@
         left: 0;
         width: 100%;
         padding: 10px 0;
-        font-size: 22px; }
-        .header .nav-links li {
-          padding: 10px 0; }
-          .header .nav-links li a {
-            color: #fde2d4; }
+        font-size: 22px;
+        
+    }
+
+    .header .nav-links li {
+        padding: 10px 0;
+    }
+
+    .header .nav-links li a {
+        color: #fde2d4;
+    }
+
     .navBoton {
-      display: block;
-      position: relative;
-      right: 15px;
-      cursor: pointer; } }
-  
-  .navbar-toggler {
-    border: none; }
-  
-  @media (max-width: 350px) {
+        display: block;
+        position: relative;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    
+   
+   
+}
+
+
+.navbar-toggler {
+    border: none;
+
+}
+
+@media (max-width:350px) {
     .navegacion {
-      height: 15vh; } }
-  
-  .footer {
+        height: 15vh;
+    }
+}
+
+
+
+
+/************Fin de HEADER*********/
+
+
+
+/***********Comienzo de HERO Inicio*********/
+.hero {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/fondo-modelado.png);
+    background-size: cover;
+    
+}
+.hero .contenedorTexto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+ 
+    
+}
+.heroText {
+    width: 50%;
+    color: #FFFFFF;
+    font-size: x-large;
+
+}
+
+.heroText h1 {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   /* text-align: center;*/
+    
+}
+
+.heroText p {
+    font-weight: 100;
+    line-height: 27px;
+    margin: 0;
+   /* text-align: center;*/
+}
+/*******Fin de HERO Inicio*********/
+
+
+/***********Comienzo de HERO Nosotros*********/
+.heroDos {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/hero.png);
+    background-size: cover;
+    
+}
+.heroDos .contenedorTextoDos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.heroTextDos {
+    width: 50%;
+    color: #FFFFFF;
+    font-size: 21px;
+    position: relative;
+    top: 10px;
+    padding: 10px 0;
+    
+
+
+}
+
+.heroTextDos h1 {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   /* text-align: center;*/
+    
+}
+
+.heroTextDos p {
+    font-weight: 100;
+    line-height: 27px;
+    margin: 0;
+   /* text-align: center;*/
+}
+
+.colorFondo {
+    background-color: #FFFFFF;
+ 
+}
+.imagenNosotros {
+   
+    object-fit: cover;
+ 
+    max-height: 350px;
+    margin: 200px;
+    width: 100vh;
+    
+    
+}
+
+.colorBoton {
+    filter: invert(1);
+}
+.colorMainNos {
+    background-color: #000000;
+}
+
+.contenedorMain {
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.colorLetra {
+    color: #000000;
+}
+
+@media (max-width:407px) {
+    .colorBoton {
+        filter: invert(0);
+    }
+}
+
+/**********Comienzo de FOOTER************/
+ .footer {
     width: 100vw;
     /*padding: 45px 0;*/
     background-color: #fde2d4;
     display: flex;
     justify-content: center;
     align-items: center;
+    
     height: 150px;
-    font-size: large; }
-    .footer ul {
-      list-style-type: none;
-      display: flex;
-      margin: 0 15px; }
-      .footer ul li a {
-        color: #4c453b;
-        text-decoration: none;
-        margin: 0 15px; }
-  
-  .whatsFoot {
-    display: none; }
-  
-  /*$estilo: (color: #fde2d4, tamFuente: 30px);
-  
-  .form-register {
-      background-color: map-get($estilo, color);
-      font-size: map-get($estilo, tamFuente);
-  }*/
-  /*.primerEstilo {
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      text-align: right;
-  }
-  
-  .segundoEstilo {
-      font-size: 35px;
-      @extend .primerEstilo;
-  }*/
-  /*
-  @mixin parrafos {
-      font-weight: 100;
-      line-height: 27px;
-      margin: 0;
-  }
-  
-  .heroText p {
-      @include parrafos;
-  }
-  
-  @mixin parrafoConParametros($margin, $family) {
-      margin: $margin;
-      font-family: $family;
-  }
-  
-  .heroText h1 {
-      @include parrafoConParametros(0,Cambria)
-  }*/
-  .hero {
-    width: 100%;
-    height: 100%;
-    background-image: url(./img/fondo-modelado.png);
-    background-size: cover; }
-    .hero .contenedorTexto {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      justify-content: center; }
-  
-  .heroText {
-    width: 50%;
-    color: #FFFFFF;
-    font-size: x-large; }
-    .heroText h1 {
-      margin: 0;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      /* text-align: center;*/ }
-    .heroText p {
-      font-weight: 100;
-      line-height: 27px;
-      margin: 0;
-      /* text-align: center;*/ }
-  
-  .heroDos {
-    width: 100%;
-    height: 100%;
-    background-image: url(./img/hero.png);
-    background-size: cover; }
-    .heroDos .contenedorTextoDos {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center; }
-  
-  .heroTextDos {
-    width: 50%;
-    color: #FFFFFF;
-    font-size: 21px;
-    position: relative;
-    top: 10px;
-    padding: 10px 0; }
-    .heroTextDos h1 {
-      margin: 0;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      /* text-align: center;*/ }
-    .heroTextDos p {
-      font-weight: 100;
-      line-height: 27px;
-      margin: 0;
-      /* text-align: center;*/ }
-  
-  .colorFondo {
-    background-color: #FFFFFF; }
-  
-  .imagenNosotros {
-    object-fit: cover;
-    max-height: 350px;
-    margin: 200px;
-    width: 100vh; }
-  
-  .colorBoton {
-    filter: invert(1); }
-  
-  .colorMainNos {
-    background-color: #000000; }
-  
-  .contenedorMain {
+    
+    font-size: large;
+    
+}
+
+.footer ul { 
+    list-style-type: none;
+    display: flex;
+    margin: 0 15px;
+
+}
+
+.footer ul li a {
+    color: #4c453b;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.whatsFoot {
+    display: none;
+}
+
+/************************Fin de Footer********************/
+
+
+/********************Comienzo de Preguntas****************/
+
+.preguntas {
+    margin: 15px;
+    padding: 25px;
+    font-size: large;
     height: 100vh;
-    overflow: hidden; }
-  
-  .colorLetra {
-    color: #000000; }
-  
-  @media (max-width: 407px) {
-    .colorBoton {
-      filter: invert(0); } }
-  
-  .logoBarb {
-    padding: 0 50px; }
-  
-  .contenedorMainDos {
+
+    
+    
+}
+
+.preguntas h2 {
+    text-align: center;
+}
+
+
+
+
+/*****************Comienzo Contactanos*********************/
+
+.logoBarb {
+    padding: 0 50px;
+}
+
+.contenedorMainDos {
     max-height: 100%;
     overflow: hidden;
-    min-height: 100vh; }
-  
-  .form-register {
+    min-height: 100vh;
+   
+    
+    
+}
+
+.form-register {
     width: 700px;
     background: #fde2d4;
     padding: 30px;
@@ -241,30 +354,46 @@
     color: #000000;
     margin-bottom: 50px;
     position: relative;
-    top: 40px; }
-    .form-register h4 {
-      font-size: 22px;
-      margin-bottom: 20px; }
+    top: 40px;
+   
+    
+    
+   
   
-  .controls {
+   
+    
+    
+    
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.controls {
     width: 95%;
     background: #fde2d4;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #000000; }
-  
-  .form-register p {
+    border: 1px solid #000000;
+    
+}
+
+.form-register p {
     height: 40px;
     text-align: center;
     font-size: 18px;
-    line-height: 40px; }
-  
-  .form-register a {
+    line-height: 40px;
+
+}
+.form-register a {
     color: white;
-    text-decoration: none; }
-  
-  .form-register .botons {
+    text-decoration: none;
+}
+.form-register .botons {
     width: 100%;
     background: #000000;
     border: none;
@@ -272,29 +401,47 @@
     color: white;
     margin: 16px 0;
     font-size: 16px;
-    cursor: pointer; }
-  
-  @media (max-width: 990px) {
+    cursor: pointer;
+}
+@media (max-width:990px) {
+
+   
+    
     .form-register h4 {
-      text-align: center; }
+        text-align: center;
+    }
+
     .preguntas {
-      height: 50%; } }
-  
-  @media (max-width: 700px) {
+        
+        height: 50%;
+    }
+}
+
+@media (max-width:700px) {
     .form-register {
-      width: auto;
-      height: auto; } }
-  
-  .padre {
+        width: auto;
+        height: auto;
+    }
+
+   
+}
+
+/*****************Fin de Contactanos*********************/
+
+
+/*************Comienzo de Productos**************/
+
+.padre {
     background-color: #ff0000;
     width: 100vw;
     height: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; }
-  
-  .hijo {
+    justify-content: space-evenly;
+}
+
+.hijo {
     background-color: #0c1b3b;
     height: 300px;
     width: 300px;
@@ -304,24 +451,35 @@
     align-items: center;
     justify-content: center;
     margin: 25px 5px;
-    padding-bottom: 100px; }
-    .hijo p {
-      display: inline-block;
-      position: relative;
-      bottom: -200px;
-      right: 100px;
-      color: #FFFFFF; }
-  
-  img {
+    padding-bottom: 100px;
+    
+}
+
+.hijo p {
+    display: inline-block;
+    position: relative;
+    bottom: -200px;
+    right: 100px;
+    color: #FFFFFF;
+}
+img {
     max-width: 250px;
-    max-height: 250px; }
-  
-  .colorMain {
+    max-height: 250px;
+}
+.colorMain {
     background-color: #FFFFFF;
     bottom: 5px;
-    min-height: 100vh; }
-  
-  .whatsapp img {
+    min-height: 100vh;
+}
+
+
+/************Fin de Producto*************/
+
+
+/********Comienzo de IconoWhatsapp********/
+ 
+
+.whatsapp img {
     width: 80px;
     display: flex;
     justify-content: center;
@@ -329,5 +487,83 @@
     height: 80px;
     position: fixed;
     bottom: 20px;
-    right: 20px; }
-  
+    right: 20px;
+}
+
+/********Fin de IconoWhatsapp********/
+
+
+/*******@Medias Querie*******/
+
+@media (max-width:854px) {
+
+
+.heroText {
+    width: calc(100vw - 100px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+
+
+}
+
+@media (max-width:600px) {
+    .heroText p {
+      display: none;
+    
+    }
+    .heroText h1 {
+      
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+@media (max-width:1013px) {
+    .footer {
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100vw;
+        
+    }
+    .footer p {
+        width: 80%;
+    }
+    .footer ul li  {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .footer ul li a:hover {
+        color: rgb(0, 0, 0);
+    }
+    
+    
+
+
+    
+
+    .whatsapp {
+        display: none;
+    }
+    
+     .whatsFoot {
+        display: flex;
+        cursor: pointer;
+        
+     }
+}
+
+.heightMain {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
